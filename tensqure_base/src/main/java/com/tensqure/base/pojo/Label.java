@@ -13,7 +13,7 @@ public class Label implements Serializable {
     private String id;
     private String labelname;
     private String state;
-    private String recomand;
+    private String recommend;
     private Long count;
     private Long fans;
 
@@ -41,12 +41,12 @@ public class Label implements Serializable {
         this.state = state;
     }
 
-    public String getRecomand() {
-        return recomand;
+    public String getRecommend() {
+        return recommend;
     }
 
-    public void setRecomand(String recomand) {
-        this.recomand = recomand;
+    public void setRecommend(String recommend) {
+        this.recommend = recommend;
     }
 
     public Long getCount() {

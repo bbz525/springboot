@@ -9,10 +9,11 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @CrossOrigin
-@RequestMapping("/")
+@RequestMapping("/label")
     public class LabelController {
     @Autowired
     private LabelService labelService;
+
     @RequestMapping(method = RequestMethod.GET)
     public Result findAll(){
         return  new Result(true, StatusCode.OK,"查找成功",labelService.findAll());
@@ -22,7 +23,7 @@ import org.springframework.web.bind.annotation.*;
 
         return  new Result(true, StatusCode.OK,"查找成功",labelService.findById(id));
     }
-    @RequestMapping(method = RequestMethod.POST)
+    @RequestMapping(value = "/save",method = RequestMethod.POST)
     public Result save(@RequestBody Label label){
         labelService.save(label);
         return  new Result(true, StatusCode.OK,"添加成功");
