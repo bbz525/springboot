@@ -8,13 +8,25 @@
         <outputRelativeToContentRoot value="true" />
         <module name="tensqure_base" />
         <module name="tensqure_common" />
+        <module name="tensqure_rabbitmq" />
+        <module name="tensqure_search" />
+        <module name="tensqure_user" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="tensquare_user" target="1.7" />
+      <module name="tensqure_user2" target="1.7" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="tensquare_user" options="-parameters" />
       <module name="tensqure_base" options="-parameters" />
       <module name="tensqure_common" options="-parameters" />
+      <module name="tensqure_rabbitmq" options="-parameters" />
+      <module name="tensqure_search" options="-parameters" />
+      <module name="tensqure_user" options="-parameters" />
+      <module name="tensqure_user2" options="" />
     </option>
   </component>
 </project>

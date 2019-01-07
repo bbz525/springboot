@@ -1,0 +1,6 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-ear" name="tensquare_user:ear exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/tensquare_user_ear_exploded</output-path>
+    <root id="root" />
+  </artifact>
+</component>
